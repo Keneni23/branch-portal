@@ -1,0 +1,127 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: test
+- Location: C:\Users\USER\Desktop\autotest superapp\branch\tests\link_accountchecker_reject.spec.js:3:5
+
+# Error details
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: 'Reject' })
+
+    at C:\Users\USER\Desktop\autotest superapp\branch\tests\link_accountchecker_reject.spec.js:15:54
+```
+
+# Page snapshot
+
+```yaml
+- region "Notifications alt+T"
+- alert
+- main:
+  - img "Cover"
+  - heading "Dashen Bank Super App Branch Portal" [level=6]
+  - text: K
+  - heading "keneni" [level=6]
+  - paragraph: "+251940676144"
+  - heading "👋 Welcome to Dashen Super App Branch Portal" [level=4]
+  - paragraph: Efficiently manage performance, transactions, and all essential settings of the super app in one place.
+  - link "Dashboard Dashboard Get a comprehensive overview of your account activities and key insights.":
+    - button:
+      - img
+    - img "Dashboard"
+    - heading "Dashboard" [level=4]
+    - paragraph: Get a comprehensive overview of your account activities and key insights.
+  - link "Customers Customers Manage customer profiles, view details and take all managing actions there.":
+    - button:
+      - img
+    - img "Customers"
+    - heading "Customers" [level=4]
+    - paragraph: Manage customer profiles, view details and take all managing actions there.
+  - link "Merchants Merchants Oversee merchant accounts, manage all the merchant details.":
+    - button:
+      - img
+    - img "Merchants"
+    - heading "Merchants" [level=4]
+    - paragraph: Oversee merchant accounts, manage all the merchant details.
+  - link "Transaction Transaction View all the completed transaction lists of your customers.":
+    - button:
+      - img
+    - img "Transaction"
+    - heading "Transaction" [level=4]
+    - paragraph: View all the completed transaction lists of your customers.
+  - button "All Actions"
+  - button "Pending Actions"
+  - searchbox: getnet
+  - img
+  - button:
+    - img
+  - table:
+    - rowgroup:
+      - row "customer id cif Number Actions customer Name email phone main Account gender Branch Status KYC Status account Type date joined":
+        - columnheader "customer id"
+        - columnheader "cif Number"
+        - columnheader "Actions"
+        - columnheader "customer Name"
+        - columnheader "email"
+        - columnheader "phone"
+        - columnheader "main Account"
+        - columnheader "gender"
+        - columnheader "Branch Status"
+        - columnheader "KYC Status"
+        - columnheader "account Type"
+        - columnheader "date joined"
+    - rowgroup:
+      - row "No results!":
+        - cell "No results!":
+          - paragraph: No results!
+  - text: "Rows per page:"
+  - button "5" [expanded]:
+    - text: "5"
+    - img
+  - list:
+    - listitem "Previous Page":
+      - img
+    - listitem "1"
+    - listitem "Next Page":
+      - img
+  - paragraph: Copyright © 2025 Dashen Super App Bank SC. All rights reserved.
+  - paragraph: v1.0.0
+- listbox "5":
+  - option "5" [selected]
+  - option "10"
+  - option "25"
+  - option "50"
+  - option "100"
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '@playwright/test';
+   2 |
+   3 | test('test', async ({ page }) => {
+   4 |   await page.goto('https://staging-dashen-super-app-branch-portal.vercel.app/auth/signin?callbackUrl=%2F');
+   5 |   await page.getByRole('textbox', { name: 'Username Continue' }).click();
+   6 |   await page.getByRole('textbox', { name: 'Username Continue' }).fill('kofi1');
+   7 |   await page.getByRole('button', { name: 'Continue' }).click();
+   8 |   await page.getByRole('textbox', { name: 'Password' }).click();
+   9 |   await page.getByRole('textbox', { name: 'Password' }).fill('Kenifira123@');
+  10 |   await page.getByRole('button', { name: 'Login' }).click();
+  11 |   await page.getByRole('button', { name: 'Pending Actions' }).click();
+  12 |   await page.getByPlaceholder('Search Customer by name,').click();
+  13 |   await page.getByPlaceholder('Search Customer by name,').fill('getnet');
+  14 |   await page.locator("(//*[@type='button'])[5]").click();
+> 15 |   await page.getByRole('button', { name: 'Reject' }).click();
+     |                                                      ^ Error: locator.click: Test timeout of 30000ms exceeded.
+  16 |   await page.getByRole('textbox', { name: 'Reason' }).click();
+  17 |   await page.getByRole('textbox', { name: 'Reason' }).fill('test ');
+  18 |   await page.locator("//form//button[text()='Reject']").click();
+  19 | });
+```

@@ -1,0 +1,2 @@
+Failed to parse response body as JSON: TypeError: Cannot read properties of undefined (reading 'otp')
+    at Page.<anonymous> (C:\Users\USER\Desktop\autotest superapp\branch\tests\set_transfer_limite.spec.js:21:42)

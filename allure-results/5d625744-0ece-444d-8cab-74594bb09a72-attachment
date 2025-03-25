@@ -1,0 +1,41 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: test
+- Location: C:\Users\USER\Desktop\autotest superapp\branch\tests\login.spec.js:4:5
+
+# Error details
+
+```
+Error: locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for getByText('K', { exact: true })
+
+    at C:\Users\USER\Desktop\autotest superapp\branch\tests\login.spec.js:12:46
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '@playwright/test';
+   2 | const { allure }= require ('allure-playwright');
+   3 |
+   4 | test('test', async ({ page }) => {
+   5 |   await page.goto('https://staging-dashen-super-app-branch-portal.vercel.app/auth/signin?callbackUrl=%2F');
+   6 |   await page.getByRole('textbox', { name: 'Username Continue' }).click();
+   7 |   await page.getByRole('textbox', { name: 'Username Continue' }).fill('kofi');
+   8 |   await page.getByRole('button', { name: 'Continue' }).click();
+   9 |   await page.getByRole('textbox', { name: 'Password' }).click();
+  10 |   await page.getByRole('textbox', { name: 'Password' }).fill('Kenifira123@');
+  11 |   await page.getByRole('button', { name: 'Login' }).click();
+> 12 |   await page.getByText('K', { exact: true }).click();
+     |                                              ^ Error: locator.click: Target page, context or browser has been closed
+  13 |   await page.getByRole('button', { name: 'Sign Out' }).click();
+  14 | });
+  15 |
+```

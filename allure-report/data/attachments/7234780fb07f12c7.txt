@@ -1,0 +1,258 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: test
+- Location: C:\Users\USER\Desktop\autotest superapp\branch\tests\link_accountchecker_reject.spec.js:3:5
+
+# Error details
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('//form//button[text()=\'Reject\']').getByRole('button', { name: 'Reject' })
+
+    at C:\Users\USER\Desktop\autotest superapp\branch\tests\link_accountchecker_reject.spec.js:18:97
+```
+
+# Page snapshot
+
+```yaml
+- region "Notifications alt+T"
+- alert
+- main:
+  - heading "Dashen Bank Super App Branch Portal" [level=6]
+  - text: K
+  - heading "keneni" [level=6]
+  - paragraph: "+251940676144"
+  - button "customers detail":
+    - img
+    - heading "customers detail" [level=6]
+  - link "Back To Home"
+  - heading "Link Account" [level=6]
+  - paragraph: Link the customer bank account to the super app.
+  - paragraph: "ActualAccount Holder Name: GETNET TADEGE ANGASH"
+  - paragraph: "Initiated Name: GETNET TADEGE ANGASH"
+  - paragraph: "Account Number: 5024892802011"
+  - button "Reject"
+  - button "Approve"
+  - heading "GETNET TADEGE ANGASH" [level=5]
+  - heading "Linked Bank Accounts" [level=6]
+  - paragraph: This Customer has no linked account yet!
+  - heading "Login Attempt Count" [level=6]
+  - heading "0" [level=6]
+  - heading "Personal Information" [level=6]
+  - img
+  - text: First Name
+  - heading "GETNET" [level=6]
+  - img
+  - text: Middle Name
+  - heading "TADEGE" [level=6]
+  - img
+  - text: Last Name
+  - heading "ANGASH" [level=6]
+  - img
+  - text: Phone Number
+  - heading "+251928812424" [level=6]
+  - img
+  - text: Email
+  - heading [level=6]
+  - img
+  - text: Nationality
+  - heading "-" [level=6]
+  - img
+  - text: Birth Date
+  - heading "-" [level=6]
+  - img
+  - text: Residential Status
+  - heading "-" [level=6]
+  - heading "Account Information" [level=6]
+  - img
+  - text: Kyc Status
+  - heading "PENDING" [level=6]
+  - img
+  - text: Device Status
+  - heading "LINKED" [level=6]
+  - img
+  - text: Account Status
+  - heading "Active" [level=6]
+  - heading "Fayda Information" [level=6]
+  - img
+  - text: Account Level
+  - heading "Level 1" [level=6]
+  - img
+  - text: Region
+  - heading "-" [level=6]
+  - img
+  - text: Woreda
+  - heading "-" [level=6]
+  - img
+  - text: Zone
+  - heading "-" [level=6]
+  - img
+  - text: Employment Status
+  - heading "-" [level=6]
+  - heading "Previous Actions" [level=6]
+  - table:
+    - rowgroup:
+      - row "requested Action maker user checker user reason status action taken at action updated at":
+        - columnheader "requested Action"
+        - columnheader "maker user"
+        - columnheader "checker user"
+        - columnheader "reason"
+        - columnheader "status"
+        - columnheader "action taken at"
+        - columnheader "action updated at"
+    - rowgroup:
+      - row "LINK ACCOUNT Keneni PENDING Tue, Mar 25 2025 (12:03 PM) Tue, Mar 25 2025 (12:03 PM)":
+        - cell "LINK ACCOUNT":
+          - paragraph: LINK ACCOUNT
+        - cell "Keneni":
+          - paragraph: Keneni
+        - cell:
+          - paragraph
+        - cell:
+          - paragraph
+        - cell "PENDING"
+        - cell "Tue, Mar 25 2025 (12:03 PM)":
+          - paragraph: Tue, Mar 25 2025 (12:03 PM)
+        - cell "Tue, Mar 25 2025 (12:03 PM)":
+          - paragraph: Tue, Mar 25 2025 (12:03 PM)
+      - row "LINK ACCOUNT Keneni keneni test REJECTED Tue, Mar 25 2025 (11:42 AM) Tue, Mar 25 2025 (11:44 AM)":
+        - cell "LINK ACCOUNT":
+          - paragraph: LINK ACCOUNT
+        - cell "Keneni":
+          - paragraph: Keneni
+        - cell "keneni":
+          - paragraph: keneni
+        - cell "test":
+          - paragraph: test
+        - cell "REJECTED"
+        - cell "Tue, Mar 25 2025 (11:42 AM)":
+          - paragraph: Tue, Mar 25 2025 (11:42 AM)
+        - cell "Tue, Mar 25 2025 (11:44 AM)":
+          - paragraph: Tue, Mar 25 2025 (11:44 AM)
+      - row "LINK ACCOUNT Keneni keneni test REJECTED Thu, Mar 20 2025 (5:22 PM) Mon, Mar 24 2025 (2:46 PM)":
+        - cell "LINK ACCOUNT":
+          - paragraph: LINK ACCOUNT
+        - cell "Keneni":
+          - paragraph: Keneni
+        - cell "keneni":
+          - paragraph: keneni
+        - cell "test":
+          - paragraph: test
+        - cell "REJECTED"
+        - cell "Thu, Mar 20 2025 (5:22 PM)":
+          - paragraph: Thu, Mar 20 2025 (5:22 PM)
+        - cell "Mon, Mar 24 2025 (2:46 PM)":
+          - paragraph: Mon, Mar 24 2025 (2:46 PM)
+      - row "LINK ACCOUNT Keneni keneni nbmn,m REJECTED Thu, Mar 20 2025 (3:12 PM) Thu, Mar 20 2025 (3:16 PM)":
+        - cell "LINK ACCOUNT":
+          - paragraph: LINK ACCOUNT
+        - cell "Keneni":
+          - paragraph: Keneni
+        - cell "keneni":
+          - paragraph: keneni
+        - cell "nbmn,m":
+          - paragraph: nbmn,m
+        - cell "REJECTED"
+        - cell "Thu, Mar 20 2025 (3:12 PM)":
+          - paragraph: Thu, Mar 20 2025 (3:12 PM)
+        - cell "Thu, Mar 20 2025 (3:16 PM)":
+          - paragraph: Thu, Mar 20 2025 (3:16 PM)
+      - row "LINK ACCOUNT Keneni keneni test REJECTED Thu, Mar 20 2025 (12:37 PM) Thu, Mar 20 2025 (3:09 PM)":
+        - cell "LINK ACCOUNT":
+          - paragraph: LINK ACCOUNT
+        - cell "Keneni":
+          - paragraph: Keneni
+        - cell "keneni":
+          - paragraph: keneni
+        - cell "test":
+          - paragraph: test
+        - cell "REJECTED"
+        - cell "Thu, Mar 20 2025 (12:37 PM)":
+          - paragraph: Thu, Mar 20 2025 (12:37 PM)
+        - cell "Thu, Mar 20 2025 (3:09 PM)":
+          - paragraph: Thu, Mar 20 2025 (3:09 PM)
+      - row "LINK ACCOUNT Keneni keneni test REJECTED Thu, Mar 20 2025 (11:50 AM) Thu, Mar 20 2025 (12:36 PM)":
+        - cell "LINK ACCOUNT":
+          - paragraph: LINK ACCOUNT
+        - cell "Keneni":
+          - paragraph: Keneni
+        - cell "keneni":
+          - paragraph: keneni
+        - cell "test":
+          - paragraph: test
+        - cell "REJECTED"
+        - cell "Thu, Mar 20 2025 (11:50 AM)":
+          - paragraph: Thu, Mar 20 2025 (11:50 AM)
+        - cell "Thu, Mar 20 2025 (12:36 PM)":
+          - paragraph: Thu, Mar 20 2025 (12:36 PM)
+      - row "LINK ACCOUNT Keneni keneni test REJECTED Thu, Mar 20 2025 (8:52 AM) Thu, Mar 20 2025 (8:54 AM)":
+        - cell "LINK ACCOUNT":
+          - paragraph: LINK ACCOUNT
+        - cell "Keneni":
+          - paragraph: Keneni
+        - cell "keneni":
+          - paragraph: keneni
+        - cell "test":
+          - paragraph: test
+        - cell "REJECTED"
+        - cell "Thu, Mar 20 2025 (8:52 AM)":
+          - paragraph: Thu, Mar 20 2025 (8:52 AM)
+        - cell "Thu, Mar 20 2025 (8:54 AM)":
+          - paragraph: Thu, Mar 20 2025 (8:54 AM)
+      - row "LINK ACCOUNT Keneni keneni test REJECTED Wed, Mar 19 2025 (2:12 PM) Wed, Mar 19 2025 (2:28 PM)":
+        - cell "LINK ACCOUNT":
+          - paragraph: LINK ACCOUNT
+        - cell "Keneni":
+          - paragraph: Keneni
+        - cell "keneni":
+          - paragraph: keneni
+        - cell "test":
+          - paragraph: test
+        - cell "REJECTED"
+        - cell "Wed, Mar 19 2025 (2:12 PM)":
+          - paragraph: Wed, Mar 19 2025 (2:12 PM)
+        - cell "Wed, Mar 19 2025 (2:28 PM)":
+          - paragraph: Wed, Mar 19 2025 (2:28 PM)
+  - paragraph: Copyright © 2025 Dashen Super App Bank SC. All rights reserved.
+  - paragraph: v1.0.0
+- dialog:
+  - button "Sr Only"
+  - heading "are you sure to reject this request ?" [level=6]
+  - paragraph: please provide a reason for rejection!
+  - text: Reason
+  - textbox "Reason": test
+  - button "Cancel"
+  - button "Reject"
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '@playwright/test';
+   2 |
+   3 | test('test', async ({ page }) => {
+   4 |   await page.goto('https://staging-dashen-super-app-branch-portal.vercel.app/auth/signin?callbackUrl=%2F');
+   5 |   await page.getByRole('textbox', { name: 'Username Continue' }).click();
+   6 |   await page.getByRole('textbox', { name: 'Username Continue' }).fill('kofi1');
+   7 |   await page.getByRole('button', { name: 'Continue' }).click();
+   8 |   await page.getByRole('textbox', { name: 'Password' }).click();
+   9 |   await page.getByRole('textbox', { name: 'Password' }).fill('Kenifira123@');
+  10 |   await page.getByRole('button', { name: 'Login' }).click();
+  11 |   await page.getByRole('button', { name: 'Pending Actions' }).click();
+  12 |   await page.getByPlaceholder('Search Customer by name,').click();
+  13 |   await page.getByPlaceholder('Search Customer by name,').fill('getnet');
+  14 |   await page.locator("(//*[@type='button'])[5]").click();
+  15 |   await page.getByRole('button', { name: 'Reject' }).click();
+  16 |   await page.getByRole('textbox', { name: 'Reason' }).click();
+  17 |   await page.getByRole('textbox', { name: 'Reason' }).fill('test ');
+> 18 |   await page.locator("//form//button[text()='Reject']").getByRole('button', { name: 'Reject' }).click();
+     |                                                                                                 ^ Error: locator.click: Test timeout of 30000ms exceeded.
+  19 | });
+```

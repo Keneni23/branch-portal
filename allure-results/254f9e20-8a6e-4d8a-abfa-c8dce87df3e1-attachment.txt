@@ -1,0 +1,2 @@
+Response URL: https://sau.eaglelionsystems.com/v1.0/chatbirrapi/ldap/otpForAttachPhone
+Response Body: { message: 'User already has a pending action in the same branch' }

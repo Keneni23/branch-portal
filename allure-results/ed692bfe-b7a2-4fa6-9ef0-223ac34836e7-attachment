@@ -1,0 +1,280 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: test
+- Location: C:\Users\USER\Desktop\autotest superapp\branch\tests\attach_phone_number.spec.js:3:5
+
+# Error details
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for getByRole('row', { name: '82693621575789 CUST123456' }).getByRole('button')
+
+    at C:\Users\USER\Desktop\autotest superapp\branch\tests\attach_phone_number.spec.js:44:90
+```
+
+# Page snapshot
+
+```yaml
+- region "Notifications alt+T"
+- alert: Customers - Dashen Super App - Branch Portal
+- main:
+  - heading "Dashen Bank Super App Branch Portal" [level=6]
+  - text: K
+  - heading "Keneni" [level=6]
+  - paragraph: "+251933703329"
+  - button "customers":
+    - img
+    - heading "customers" [level=6]
+  - link "Back To Home"
+  - searchbox
+  - button:
+    - img
+  - button "Filter by status":
+    - text: Filter by status
+    - img
+  - table:
+    - rowgroup:
+      - row "customer id cif Number Actions customer Name email phone main Account gender Branch Status account Type date joined":
+        - columnheader "customer id"
+        - columnheader "cif Number"
+        - columnheader "Actions"
+        - columnheader "customer Name"
+        - columnheader "email"
+        - columnheader "phone"
+        - columnheader "main Account"
+        - columnheader "gender"
+        - columnheader "Branch Status"
+        - columnheader "account Type"
+        - columnheader "date joined"
+    - rowgroup:
+      - row "183951142134485 015910659 belay dori boroji +251924371431 5015910659001 AUTHORIZED LINKED Sat, Mar 15 2025 (3:28 PM)":
+        - cell "183951142134485":
+          - paragraph: "183951142134485"
+        - cell "015910659":
+          - paragraph: "015910659"
+        - cell:
+          - link:
+            - button:
+              - img
+        - cell "belay dori boroji":
+          - paragraph: belay dori boroji
+        - cell:
+          - paragraph
+        - cell "+251924371431":
+          - paragraph: "+251924371431"
+        - cell "5015910659001":
+          - paragraph: "5015910659001"
+        - cell:
+          - paragraph
+        - cell "AUTHORIZED"
+        - cell "LINKED":
+          - paragraph: LINKED
+        - cell "Sat, Mar 15 2025 (3:28 PM)":
+          - paragraph: Sat, Mar 15 2025 (3:28 PM)
+      - row "174612186912584 C81653917 nebila sadener abagissa +251921069701 2928165391711 AUTHORIZED LINKED Sat, Mar 15 2025 (12:52 PM)":
+        - cell "174612186912584":
+          - paragraph: "174612186912584"
+        - cell "C81653917":
+          - paragraph: C81653917
+        - cell:
+          - link:
+            - button:
+              - img
+        - cell "nebila sadener abagissa":
+          - paragraph: nebila sadener abagissa
+        - cell:
+          - paragraph
+        - cell "+251921069701":
+          - paragraph: "+251921069701"
+        - cell "2928165391711":
+          - paragraph: "2928165391711"
+        - cell:
+          - paragraph
+        - cell "AUTHORIZED"
+        - cell "LINKED":
+          - paragraph: LINKED
+        - cell "Sat, Mar 15 2025 (12:52 PM)":
+          - paragraph: Sat, Mar 15 2025 (12:52 PM)
+      - row "164774760889457 Yonatan Million alemu +251705100810 - INITIATED NEW Sat, Mar 15 2025 (10:08 AM)":
+        - cell "164774760889457":
+          - paragraph: "164774760889457"
+        - cell:
+          - paragraph
+        - cell:
+          - link:
+            - button:
+              - img
+        - cell "Yonatan Million alemu":
+          - paragraph: Yonatan Million alemu
+        - cell:
+          - paragraph
+        - cell "+251705100810":
+          - paragraph: "+251705100810"
+        - cell "-":
+          - paragraph: "-"
+        - cell:
+          - paragraph
+        - cell "INITIATED"
+        - cell "NEW":
+          - paragraph: NEW
+        - cell "Sat, Mar 15 2025 (10:08 AM)":
+          - paragraph: Sat, Mar 15 2025 (10:08 AM)
+      - row "10048980006642 I48479211 haji nasir hassen yesuf +251913233239 2984847921111 DENIED LINKED Fri, Mar 14 2025 (4:17 PM)":
+        - cell "10048980006642":
+          - paragraph: "10048980006642"
+        - cell "I48479211":
+          - paragraph: I48479211
+        - cell:
+          - link:
+            - button:
+              - img
+        - cell "haji nasir hassen yesuf":
+          - paragraph: haji nasir hassen yesuf
+        - cell:
+          - paragraph
+        - cell "+251913233239":
+          - paragraph: "+251913233239"
+        - cell "2984847921111":
+          - paragraph: "2984847921111"
+        - cell:
+          - paragraph
+        - cell "DENIED"
+        - cell "LINKED":
+          - paragraph: LINKED
+        - cell "Fri, Mar 14 2025 (4:17 PM)":
+          - paragraph: Fri, Mar 14 2025 (4:17 PM)
+      - row "96339513473768 083004851 fraol tesfaye tolera hanamelke11@gmail.com +251703420185 5083004851002 AUTHORIZED LINKED Fri, Mar 14 2025 (3:08 PM)":
+        - cell "96339513473768":
+          - paragraph: "96339513473768"
+        - cell "083004851":
+          - paragraph: "083004851"
+        - cell:
+          - link:
+            - button:
+              - img
+        - cell "fraol tesfaye tolera":
+          - paragraph: fraol tesfaye tolera
+        - cell "hanamelke11@gmail.com":
+          - paragraph: hanamelke11@gmail.com
+        - cell "+251703420185":
+          - paragraph: "+251703420185"
+        - cell "5083004851002":
+          - paragraph: "5083004851002"
+        - cell:
+          - paragraph
+        - cell "AUTHORIZED"
+        - cell "LINKED":
+          - paragraph: LINKED
+        - cell "Fri, Mar 14 2025 (3:08 PM)":
+          - paragraph: Fri, Mar 14 2025 (3:08 PM)
+  - text: "Rows per page:"
+  - button "5":
+    - text: "5"
+    - img
+  - list:
+    - listitem "Previous Page":
+      - img
+    - listitem "1"
+    - listitem "Previous 3 Pages": •••
+    - listitem "3"
+    - listitem "4"
+    - listitem "5"
+    - listitem "Next 3 Pages": •••
+    - listitem "417"
+    - listitem "Next Page":
+      - img
+    - listitem
+  - paragraph: Copyright © 2025 Dashen Super App Bank SC. All rights reserved.
+  - paragraph: v1.0.0
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '@playwright/test';
+   2 |
+   3 | test('test', async ({ page }) => {
+   4 |
+   5 |     let otp = null;
+   6 |
+   7 |     // Listen for network responses
+   8 |     page.on('response', async (response) => {
+   9 |       const url = response.url(); // Get the URL of the response
+  10 |   
+  11 |       // Check if the response URL matches the specific endpoint
+  12 |       if (url.includes('https://sau.eaglelionsystems.com/v1.0/chatbirrapi/ldap/otpForAttachPhone')) {
+  13 |         console.log(`Response URL: ${url}`);
+  14 |   
+  15 |         // Get the response body as JSON
+  16 |         try {
+  17 |           const responseBody = await response.json(); // Parse the response body as JSON
+  18 |           console.log('Response Body:', responseBody);
+  19 |   
+  20 |           // Extract the OTP from the response body
+  21 |           if (responseBody.finalResponse.otp.otpcode) {
+  22 |             otp = responseBody.finalResponse.otp.otpcode; // Assuming the OTP is in a field named "otpcode"
+  23 |             console.log(`OTP: ${otp}`);
+  24 |           } else {
+  25 |             console.error('OTP not found in the response body.');
+  26 |           }
+  27 |         } catch (error) {
+  28 |           console.error('Failed to parse response body as JSON:', error);
+  29 |         }
+  30 |       }
+  31 |     });
+  32 |
+  33 |   await page.goto('https://staging-dashen-super-app-branch-portal.vercel.app/auth/signin?callbackUrl=%2F');
+  34 |   await page.getByRole('textbox', { name: 'Username Continue' }).click();
+  35 |   await page.getByRole('textbox', { name: 'Username Continue' }).fill('kofi');
+  36 |   await page.getByRole('button', { name: 'Continue' }).click();
+  37 |   await page.getByRole('textbox', { name: 'Password' }).click();
+  38 |   await page.getByRole('textbox', { name: 'Password' }).fill('Kenifira123@');
+  39 |   await page.getByRole('button', { name: 'Login' }).click();
+  40 |   await page.getByRole('link', { name: 'Customers Customers Manage' }).click();
+  41 |   await page.getByPlaceholder('Search Customer by name,').click();
+  42 |   await page.getByText('3', { exact: true }).click();
+  43 |   await page.getByText('4', { exact: true }).click();
+> 44 |   await page.getByRole('row', { name: '82693621575789 CUST123456' }).getByRole('button').click();
+     |                                                                                          ^ Error: locator.click: Test timeout of 30000ms exceeded.
+  45 |   await page.getByText('Attach new phone number to').click();
+  46 |   await page.getByRole('spinbutton', { name: 'Phone Number +' }).click();
+  47 |   await page.getByRole('spinbutton', { name: 'Phone Number +' }).fill('941301503');
+  48 |
+  49 |   await page.getByRole('button', { name: 'Send OTP' }).click();
+  50 |
+  51 |   await page.waitForTimeout(5000); // Wait for 5 seconds
+  52 |
+  53 |   // Check if the OTP was captured
+  54 |   if (!otp) {
+  55 |     throw new Error('OTP was not captured from the network response.');
+  56 |   }
+  57 |
+  58 |   // Split the OTP into individual digits
+  59 |   const otpDigits = otp.split('');
+  60 |   if (otpDigits.length !== 6) {
+  61 |     throw new Error('OTP must be 6 digits long.');
+  62 |   }
+  63 |
+  64 |   // Fill the OTP into the input boxes
+  65 |   for (let i = 0; i < 6; i++) {
+  66 |     const inputSelector = `.eagle-ui-pin-code-field:nth-child(${i + 1})`;
+  67 |     await page.locator(inputSelector).fill(otpDigits[i]);
+  68 |   }
+  69 | /*
+  70 |   await page.locator('.eagle-ui-pin-code-field').first().click();
+  71 |   await page.locator('.eagle-ui-pin-code-field').first().fill('5');
+  72 |   await page.locator('input:nth-child(2)').fill('8');
+  73 |   await page.locator('input:nth-child(3)').fill('7');
+  74 |   await page.locator('input:nth-child(4)').fill('0');
+  75 |   await page.locator('input:nth-child(5)').fill('5');
+  76 |   await page.locator('input:nth-child(6)').fill('0');*/
+  77 |   await page.getByRole('button', { name: 'Verify OTP' }).click();
+  78 | });
+```
